@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --main-bg-color: #d2c5e6;
+    --light-accent: #e3dbf0;
+    --dark-accent: #c1a4eb;
+}
+
+.courier-prime-regular {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.courier-prime-bold {
+font-family: "Courier Prime", monospace;
+font-weight: 700;
+font-style: normal;
+}
+
+.courier-prime-regular-italic {
+font-family: "Courier Prime", monospace;
+font-weight: 400;
+font-style: italic;
+}
+
+.courier-prime-bold-italic {
+font-family: "Courier Prime", monospace;
+font-weight: 700;
+font-style: italic;
+}
+
+body {
+    display: grid;
+    grid-template-columns: auto 50vw auto;
+    grid-template-rows: auto auto 80vh;
+    padding: 0;
+    margin: 0;
+    background-color: var(--main-bg-color);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+a {
+    text-decoration: none;
+}
+
+.banner {
+    grid-column: 1/4;
+}
+
+.banner img {
+    width: 15vw;
+    margin: auto;
+}
+
+.menu {
+    grid-column: 1/4;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+}
+
+.menu > p {
+    padding: 10px;
+    margin: 0px 20px;
+    border-radius: 20px;
+    background-color: var(--light-accent);
+}
+
+.menu>p:hover{
+    background-color: rgb(192, 176, 214);
+    transition: 20ms ease;
+}
+
+.menu a:visited {
+    color: black;
+}
+
+.leftContent {
+    grid-column: 1/2;
+}
+
+.centerContent {
+    grid-column: 2/3;
+}
+
+.rightContent{
+    grid-column: 3/4;
+}
+
+.footer {
+    grid-column: 1 / 4;
+}
