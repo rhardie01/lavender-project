@@ -1,0 +1,58 @@
+body {
+    display: grid;
+    grid-template-columns: auto 50vw auto;
+    grid-template-rows: auto auto 80vh;
+    padding: 0;
+    margin: 0;
+    background-color: #d2c5e6;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.banner {
+    grid-column: 1/4;
+}
+
+.banner img {
+    width: 15vw;
+    margin: auto;
+}
+
+.menu {
+    grid-column: 1/4;
+    flex-direction: row;
+    padding: 0;
+}
+
+.menu > p {
+    padding: 10px;
+    margin: 0px auto 0px auto;
+}
+
+.menu>p:hover{
+    background-color: rgb(192, 176, 214);
+    transition: 10ms;
+}
+
+.leftContent {
+}
+
+.centerContent {
+    grid-column: 2/3;
+}
+
+.rightContent{
+}
+
+.footer {
+    grid-column: 1 / 4;
+}
